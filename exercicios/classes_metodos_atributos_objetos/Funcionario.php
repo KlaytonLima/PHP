@@ -3,7 +3,7 @@ class Funcionario{
 
     private string $nome;
     private string $cpf;
-    private string $numero_dependentes;
+    private int $numero_dependentes;
     private float $fgts;
     private float $desconto_inss;
     private float $salario_descontado_inss;
@@ -15,8 +15,7 @@ class Funcionario{
 
     public function calcular_fgts(){
 
-        $this->$salario_bruto = 2000;
-
+       
     }
 
     public function calcular_inss(){
@@ -44,26 +43,21 @@ class Funcionario{
 
     public function calcular_imposto_renda(){
 
-        $this->$salario_descontado_inss = "";
-
-    }
 
     public function calcular_salario_familia(){
 
-        $this->$salario_bruto = "";
-        $this->$numero_dependentes = "";
 
     }
 
     public function calcular_vale_transporte(){
 
-        $this->$salario_bruto = "";
+        
 
     }
 
     public function calcular_salario_liquido(){
 
-
+        
 
     }
 

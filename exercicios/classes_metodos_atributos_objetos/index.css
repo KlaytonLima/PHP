@@ -1,0 +1,34 @@
+body{
+   background-image: linear-gradient(180deg, lightblue, whitesmoke);
+}
+
+header{
+   
+   margin-top: 150px;
+   margin-left: 250px;
+   margin-right: 250px;
+   height: 325px;
+   border: 1px solid;
+   border-radius: 15px; 
+
+}
+
+.container{
+   
+  margin-top: 25px;
+  text-align: center;
+ 
+}
+
+.container input[for='nome']{
+   width: 600px;
+}
+
+.container input[for='total']{
+   margin-left: 525px;
+}
+
+.container label[for='total']{
+   margin-left: 525px;
+}
+
