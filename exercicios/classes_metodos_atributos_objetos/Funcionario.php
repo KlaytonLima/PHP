@@ -15,6 +15,9 @@ class Funcionario{
 
     public function calcular_fgts(){
 
+        $fgts = ($salario_bruto * 8)/100;
+        return $this->$salario_bruto - $fgts; 
+        
        
     }
 
@@ -22,42 +25,56 @@ class Funcionario{
 
         if($salario_bruto <= 1302){
 
-            $this->$salario_bruto - (7.5 * $salario_bruto)/100;
+           return $this->$salario_bruto - (7.5 * $salario_bruto)/100;
 
         }
         elseif($salario_bruto > 1302 && $salario_bruto <= 2571.29){
 
-            $this->$salario_bruto - (9 * $salario_bruto)/100;
+           return $this->$salario_bruto - (9 * $salario_bruto)/100;
 
         }
         elseif($salario_bruto > 2571.29 && $salario_bruto <= 3856.94){
 
-            $this->$salario_bruto - (12 * $salario_bruto)/100;
+           return $this->$salario_bruto - (12 * $salario_bruto)/100;
 
         }
         else{
 
-            $this->$salario_bruto - (14 * $salario_bruto)/100;
+            return $this->$salario_bruto - (14 * $salario_bruto)/100;
         }
     }
 
     public function calcular_imposto_renda(){
 
+        if($salario_bruto >1903.98 && $salario_bruto <= 2826.65){
 
-    public function calcular_salario_familia(){
+           return $this->$salario_bruto - (7.5 * $salario_bruto)/100;
 
+        }
 
-    }
+        elseif($salario_bruto > 2826.65 && $salario_bruto <= 3751.05){
 
-    public function calcular_vale_transporte(){
+            return $this->$salario_bruto - (15 * $salario_bruto)/100;
 
+        }
         
+        elseif($salario_bruto > 3751.05 && $salario_bruto <= 4664.68){
 
-    }
+           return $this->$salario_bruto - (22.5 * $salario_bruto)/100; 
 
+        }
+
+        elseif($salario_bruto > 4664.69){
+
+           return $this->$salario_bruto - (27.5 * $salario_bruto)/100;
+
+        }
+
+
+  
     public function calcular_salario_liquido(){
 
-        
+        return $this->$salario_bruto - calcular_fgts - calcular_inss - calcular_imposto_renda;        
 
     }
 

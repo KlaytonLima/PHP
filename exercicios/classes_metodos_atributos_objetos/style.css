@@ -1,0 +1,72 @@
+body{
+
+    background-image: url(./img/GUEST_e5f2537d-1517-4758-be6d-ff9a964e249b.jpg);
+
+}
+ header{
+    
+    margin-top: 150px;
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 360px;
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 15px -15px gray;
+    opacity: 0.7;
+    background-image:radial-gradient(whitesmoke, lightgray, gray);
+    
+
+ }
+ 
+ .container{
+  
+   margin-top: 25px;
+   text-align: center;
+  
+ }
+ 
+ .container input[for='nome']{
+    width: 600px;
+    border: 1px solid;
+    border-radius: 8px;
+ }
+ 
+ .container input[for='cpf']{
+    width: 400px;
+    border: 1px solid;
+    border-radius: 8px;
+ }
+
+ .container input[for='numero_dependentes']{
+    width: 100px;
+    border: 1px solid;
+    border-radius: 8px;
+ }
+ 
+ .container input[for='total']{
+    margin-left: 525px;
+    border: 1px solid;
+    border-radius: 8px;
+ }
+
+ .container input[for='salario_bruto']{
+    border: 1px solid;
+    border-radius: 8px;
+ }
+ 
+ .container label[for='total']{
+    margin-left: 525px;
+ }
+
+ .container button{
+    
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 3px -3px black;
+
+ }
+ 
+ 
